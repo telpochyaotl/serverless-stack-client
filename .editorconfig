@@ -1,0 +1,31 @@
+# This file is for unifying the coding style for different editors and IDEs
+# editorconfig.org
+
+root = true
+
+[*]
+indent_style = tab
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[{*.js,*.jsx,*.json,*.css,.babelrc}]
+indent_style = space
+indent_size = 2
+
+[*.yml]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+
+# We are starting with just the api, Set, and Model directories.
+# Will expand to more directores as possible
+# @standards  PHP: http://www.php-fig.org/psr/psr-2/
+[{public/api/**,public/Set/**,public/Model/**,public/service/**,tests/fixturetool/**,tests/phpunit/**,public/**,tests/codeception2/**}]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_size = 4
+indent_style = space
