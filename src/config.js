@@ -12,5 +12,7 @@ export default {
     USER_POOL_ID: "us-west-2_IsMu68Mqb",
     APP_CLIENT_ID: "5v238jv445hvpnd7boh0ieomie",
     IDENTITY_POOL_ID: "us-west-2:16a8fa78-2b8c-4bc8-965d-675e6ab1f616",
-  }
+  },
+  MAX_ATTACHMENT_SIZE: 5000000,
+  STRIPE_KEY: "pk_test_vxdDJ8U0Qhx7YwRmD3mLx1Gd00CzTrvVQQ",
 };

@@ -43,12 +43,16 @@ function App() {
         <Navbar.Collapse>
         <Nav pullRight>
         {isAuthenticated
-            ? <NavItem onClick={async () => {
-                await Auth.signOut();
-                userHasAuthenticated(false);
-                history.push("/login");
-            }}>Logout</NavItem>
-            : <>
+         ? <>
+         <NavItem onClick={async () => {
+           await Auth.signOut();
+           userHasAuthenticated(false);
+           history.push("/login");
+         }}>Logout</NavItem>
+         <LinkContainer to="/settings">
+           <NavItem>Settings</NavItem>
+         </LinkContainer>
+         </> : <>
             <LinkContainer to="/signup">
               <NavItem>Signup</NavItem>
             </LinkContainer>
